@@ -28,8 +28,13 @@ public class Rectangle extends Figures implements Printable {
         return sideB;
     }
 
+    public int perimetr(){
+        return (sideA + sideB)*2;
+    }
+
 
     public void print() {
-        System.out.println("♻" + " " + getName() + "Сторона А: " + getSideA() + " " + getSideB() + getCountOfSides());
+        System.out.println("♻" + " " + getName() + "\n Сторона А: " + getSideA() + " Cторона Б: " + getSideB() + " Count of sides: " +  getCountOfSides()
+                + " Perimeter: " + perimetr() );
     }
 }

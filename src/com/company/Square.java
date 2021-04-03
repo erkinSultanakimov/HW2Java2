@@ -16,9 +16,12 @@ public class Square extends Figures implements Printable{
         return side;
     }
 
+    public int perimetr(){
+        return side*4;
+    }
 
     public void print() {
-        System.out.println("⬜" + " " + getName() + "Сторона А: " + " " + getSide() + getCountOfSides());
+        System.out.println("⬜" + " " + getName() + "\n Стороны: "  + getSide() + " Count of sides: " + getCountOfSides() + " Perimeter: " + perimetr());
     }
 
 }

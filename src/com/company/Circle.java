@@ -26,8 +26,12 @@ public class Circle extends Figures implements Printable{
         return pi;
     }
 
+    public double perimetr(){
+        return 2*pi*radius;
+    }
+
     public void print() {
-        System.out.println("⬜" + " " + getName() + "Сторона А: " + " " + getRadius() + getCountOfSides());
+        System.out.println("⚫" + " " + getName() + "\nRadius: " + getRadius() + " Count of sides: " + getCountOfSides() + " Perimeter: " + perimetr());
     }
 
 
